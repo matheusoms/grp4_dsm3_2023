@@ -14,7 +14,7 @@ A partir dele, desenvolvemos uma plataforma web onde o produtor agrícola conseg
 ## Integrantes do Projeto
 
 <b>Matheus Rodrigues</b> <br>
-`Github` [preencher](https://github.com/)
+`Github` [mastruz7](https://github.com/mastruz7)
 
 <b>Matheus Matias</b> <br>
 `Github` [matheusoms](https://github.com/matheusoms)
