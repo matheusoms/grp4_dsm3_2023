@@ -1,4 +1,4 @@
-# Plantae: Salvaguardando a Biodiversidade Vegetal para as Gerações Futuras
+# Plantae: Biodiversidade Vegetal para as Gerações Futuras
 
 Nosso projeto é baseado na ODS de número 2 "Fome zero e agricultura sustentável". Dentre os diversos micro objetivos desta ODS está presente o seguinte:
 
