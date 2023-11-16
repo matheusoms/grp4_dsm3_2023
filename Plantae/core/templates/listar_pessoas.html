@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Pessoas</title>
+</head>
+<body>
+    <h1>Listar Pessoas</h1>
+    <ul>
+        {% for pessoa in pessoas %}
+            <li>{{ pessoa.nome }} - {{ pessoa.idade }} anos</li>
+        {% endfor %}
+    </ul>
+
+    <!-- Adicione o link para a página de criação de pessoas -->
+    <a href="{% url 'criar_pessoa' %}">Criar Pessoa</a>
+</body>
+</html>
