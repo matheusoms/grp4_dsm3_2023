@@ -42,6 +42,7 @@ A partir dele, desenvolvemos uma plataforma web onde o produtor agrícola conseg
 - MongoDB
 
 ## Requisitos para o Projeto
+
 Banco de Dados [Mongo Database](https://www.mongodb.com/):
 - Mongo Server
 - Mongo Compass
