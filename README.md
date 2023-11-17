@@ -40,3 +40,29 @@ A partir dele, desenvolvemos uma plataforma web onde o produtor agrícola conseg
 
 `Banco de Dados:` Estamos utilizando para o desenvolvimento do banco de dados NoSQL as seguintes linguagens:
 - MongoDB
+
+## Requisitos para o Projeto
+
+Banco de Dados [Mongo Database](https://www.mongodb.com/):
+- Mongo Server
+- Mongo Compass
+- Porta localhost `27017`
+Caso esteja no Linux deve-se usar o comando no CMD `sudo systemctl start mongod` para iniciar o server e
+`sudo systemctl stop mongod` para parar o server
+
+Backend [Python](https://www.python.org/):
+- Python
+- Ativar a Venv 
+`virtualenv "nome do hambiente"`
+`pip install -r requirements.txt`
+No Windows `cd venv` `cd scripts` `activate.bat`
+No Linux `source venv/bin/activate`
+- Rodar o servidor
+`cd Plantae/`
+`python manage.py runserver`
+- Depois abra o navegador no localhost indicado
+
+
+
+
+
