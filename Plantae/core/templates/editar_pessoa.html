@@ -7,7 +7,8 @@
 </head>
 <body>
     <h1>Editar Pessoa</h1>
-    <form method="post" action="{% url 'editar_pessoa' pessoa_id %}">
+    <form method="post" action="{% url 'editar_pessoa' pessoa_cpf=pessoa_cpf %}">
+
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit">Salvar</button>
