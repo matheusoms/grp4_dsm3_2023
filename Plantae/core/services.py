@@ -1,11 +1,13 @@
+# No arquivo core/services.py
+from .forms import PessoaForm
 from .mongodb_utils import get_mongo_connection
 
-def criar_pessoa(nome, idade):
+def criar_pessoa(nome, idade, cpf):
     client = get_mongo_connection()
     db = client['PROJETO']
     colecao = db['semente']
 
-    pessoa = {"nome": nome, "idade": idade}
+    pessoa = {"nome": nome, "idade": idade, "cpf": cpf}
     result = colecao.insert_one(pessoa)
 
     client.close()
@@ -16,40 +18,58 @@ def obter_pessoas():
     db = client['PROJETO']
     colecao = db['semente']
 
-    pessoas = list(colecao.find())
+    # Use projection para excluir o campo _id do resultado
+    pessoas = list(colecao.find({}, {'_id': 0}))
 
     client.close()
     return pessoas
 
-def obter_pessoa_por_id(pessoa_id):
+def obter_pessoa_por_cpf(pessoa_cpf):
     client = get_mongo_connection()
     db = client['PROJETO']
     colecao = db['semente']
 
-    pessoa = colecao.find_one({"_id": pessoa_id})
+    pessoa_data = colecao.find_one({"cpf": pessoa_cpf})
 
     client.close()
-    return pessoa
 
-def atualizar_pessoa(id, nome, idade):
+    if pessoa_data:
+        pessoa_data.pop('_id', None)
+        print(f"DEBUG: Documento encontrado antes da atualização: {pessoa_data}")
+        return pessoa_data
+    else:
+        return None
+
+def atualizar_pessoa(cpf, nome, idade, novo_cpf):
     client = get_mongo_connection()
     db = client['PROJETO']
     colecao = db['semente']
 
-    filtro = {"_id": id}
-    atualizacao = {"$set": {"nome": nome, "idade": idade}}
+    filtro = {"cpf": cpf}
+    atualizacao = {"$set": {"nome": nome, "idade": idade, "cpf": novo_cpf}}
+    
+    # Adicione logs temporários para depuração
+    print(f"DEBUG: Atualizando pessoa com CPF {cpf}. Nova CPF: {novo_cpf}")
+
     result = colecao.update_one(filtro, atualizacao)
+
+    # Adicione logs temporários para depuração
+    print(f"DEBUG: Documentos modificados: {result.modified_count}")
 
     client.close()
     return result.modified_count
 
-def excluir_pessoa(id):
+
+# No arquivo core/services.py
+
+def excluir_pessoa(cpf):
     client = get_mongo_connection()
     db = client['PROJETO']
     colecao = db['semente']
 
-    filtro = {"_id": id}
+    filtro = {"cpf": cpf}
     result = colecao.delete_one(filtro)
 
     client.close()
     return result.deleted_count
+
