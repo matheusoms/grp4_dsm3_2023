@@ -49,7 +49,7 @@ Banco de Dados [Mongo Database](https://www.mongodb.com/):
 - Porta localhost `27017`
 Caso esteja no Linux deve-se usar o comando no CMD `sudo systemctl start mongod` para iniciar o server e
 `sudo systemctl stop mongod` para parar o server
-
+- Criar um Banco chamado PROJETO e uma coleção chamada semente
 Backend [Python](https://www.python.org/):
 - Python
 - Ativar a Venv 
