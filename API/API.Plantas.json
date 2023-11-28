@@ -1,0 +1,720 @@
+[{
+  "nome_cientifico": "Rosa gallica",
+  "nome_popular": "Rosa Vermelha",
+  "clima": "Temperado",
+  "regiao": "Europa",
+  "ml_dia": 300,
+  "melhor_solo": "Solo Argiloso",
+  "dificuldade_cultivar": "Moderada"
+},
+{
+  "nome_cientifico": "Lavandula angustifolia",
+  "nome_popular": "Lavanda",
+  "clima": "Mediterrâneo",
+  "regiao": "Europa",
+  "ml_dia": 250,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Ficus elastica",
+  "nome_popular": "Ficus",
+  "clima": "Tropical",
+  "regiao": "Ásia",
+  "ml_dia": 500,
+  "melhor_solo": "Solo Úmido e Rico em Nutrientes",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Tulipa gesneriana",
+  "nome_popular": "Tulipa",
+  "clima": "Temperado",
+  "regiao": "Europa",
+  "ml_dia": 200,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Cactaceae",
+  "nome_popular": "Cacto",
+  "clima": "Desértico",
+  "regiao": "Américas",
+  "ml_dia": 50,
+  "melhor_solo": "Solo Arenoso",
+  "dificuldade_cultivar": "Muito Fácil"
+},
+{
+  "nome_cientifico": "Orchidaceae",
+  "nome_popular": "Orquídea",
+  "clima": "Tropical",
+  "regiao": "Ásia",
+  "ml_dia": 400,
+  "melhor_solo": "Substrato de Orquídea",
+  "dificuldade_cultivar": "Moderada"
+},
+{
+  "nome_cientifico": "Aloe vera",
+  "nome_popular": "Aloe Vera",
+  "clima": "Árido",
+  "regiao": "África",
+  "ml_dia": 150,
+  "melhor_solo": "Solo Arenoso",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Fuchsia hybrida",
+  "nome_popular": "Fuchsia",
+  "clima": "Temperado",
+  "regiao": "Américas",
+  "ml_dia": 300,
+  "melhor_solo": "Solo Úmido e Rico",
+  "dificuldade_cultivar": "Moderada"
+},
+{
+  "nome_cientifico": "Bamboo",
+  "nome_popular": "Bambu",
+  "clima": "Tropical",
+  "regiao": "Ásia",
+  "ml_dia": 600,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Acer palmatum",
+  "nome_popular": "Bordo Japonês",
+  "clima": "Temperado",
+  "regiao": "Ásia",
+  "ml_dia": 250,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Moderada"
+},
+{
+  "nome_cientifico": "Cymbidium",
+  "nome_popular": "Orquídea Cymbidium",
+  "clima": "Temperado",
+  "regiao": "Ásia",
+  "ml_dia": 350,
+  "melhor_solo": "Substrato de Orquídea",
+  "dificuldade_cultivar": "Moderada"
+},
+{
+  "nome_cientifico": "Echeveria",
+  "nome_popular": "Echeveria",
+  "clima": "Desértico",
+  "regiao": "Américas",
+  "ml_dia": 100,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Phalaenopsis",
+  "nome_popular": "Orquídea Borboleta",
+  "clima": "Tropical",
+  "regiao": "Ásia",
+  "ml_dia": 400,
+  "melhor_solo": "Substrato de Orquídea",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Avena sativa",
+  "nome_popular": "Aveia",
+  "clima": "Temperado",
+  "regiao": "Europa",
+  "ml_dia": 200,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Sarracenia",
+  "nome_popular": "Jarro-de-Sarraceno",
+  "clima": "Temperado",
+  "regiao": "Américas",
+  "ml_dia": 150,
+  "melhor_solo": "Solo Ácido",
+  "dificuldade_cultivar": "Moderada"
+},
+{
+  "nome_cientifico": "Cyperus papyrus",
+  "nome_popular": "Papiro",
+  "clima": "Tropical",
+  "regiao": "África",
+  "ml_dia": 300,
+  "melhor_solo": "Solo Úmido",
+  "dificuldade_cultivar": "Moderada"
+},
+{
+  "nome_cientifico": "Helianthus annuus",
+  "nome_popular": "Girassol",
+  "clima": "Temperado",
+  "regiao": "Américas",
+  "ml_dia": 200,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Rhododendron",
+  "nome_popular": "Rododendro",
+  "clima": "Temperado",
+  "regiao": "Ásia",
+  "ml_dia": 300,
+  "melhor_solo": "Solo Ácido",
+  "dificuldade_cultivar": "Moderada"
+},
+{
+  "nome_cientifico": "Nelumbo nucifera",
+  "nome_popular": "Lótus",
+  "clima": "Tropical",
+  "regiao": "Ásia",
+  "ml_dia": 400,
+  "melhor_solo": "Lama ou Solo Aquático",
+  "dificuldade_cultivar": "Moderada"
+},
+{
+  "nome_cientifico": "Salvia officinalis",
+  "nome_popular": "Sálvia",
+  "clima": "Temperado",
+  "regiao": "Europa",
+  "ml_dia": 250,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Jasminum",
+  "nome_popular": "Jasmim",
+  "clima": "Tropical",
+  "regiao": "Ásia",
+  "ml_dia": 350,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Moderada"
+},
+{
+  "nome_cientifico": "Dahlia pinnata",
+  "nome_popular": "Dália",
+  "clima": "Temperado",
+  "regiao": "Américas",
+  "ml_dia": 250,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Moderada"
+},
+{
+  "nome_cientifico": "Cycas revoluta",
+  "nome_popular": "Cica",
+  "clima": "Tropical",
+  "regiao": "Ásia",
+  "ml_dia": 200,
+  "melhor_solo": "Solo Arenoso",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Paphiopedilum",
+  "nome_popular": "Orquídea Sapatinho",
+  "clima": "Tropical",
+  "regiao": "Ásia",
+  "ml_dia": 350,
+  "melhor_solo": "Substrato de Orquídea",
+  "dificuldade_cultivar": "Moderada"
+},
+{
+  "nome_cientifico": "Aeonium",
+  "nome_popular": "Aeonium",
+  "clima": "Desértico",
+  "regiao": "Américas",
+  "ml_dia": 100,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Hosta",
+  "nome_popular": "Hosta",
+  "clima": "Temperado",
+  "regiao": "Américas",
+  "ml_dia": 300,
+  "melhor_solo": "Solo Úmido e Rico",
+  "dificuldade_cultivar": "Moderada"
+},
+{
+  "nome_cientifico": "Aspidistra elatior",
+  "nome_popular": "Aspidistra",
+  "clima": "Temperado",
+  "regiao": "Ásia",
+  "ml_dia": 150,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Magnolia grandiflora",
+  "nome_popular": "Magnólia",
+  "clima": "Temperado",
+  "regiao": "Américas",
+  "ml_dia": 200,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Moderada"
+},
+{
+  "nome_cientifico": "Zamioculcas zamiifolia",
+  "nome_popular": "Zamioculca",
+  "clima": "Tropical",
+  "regiao": "África",
+  "ml_dia": 180,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Pilea peperomioides",
+  "nome_popular": "Planta da Amizade",
+  "clima": "Temperado",
+  "regiao": "Ásia",
+  "ml_dia": 120,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Clematis",
+  "nome_popular": "Clematis",
+  "clima": "Temperado",
+  "regiao": "Europa",
+  "ml_dia": 250,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Moderada"
+},
+{
+  "nome_cientifico": "Sansevieria trifasciata",
+  "nome_popular": "Espada-de-São-Jorge",
+  "clima": "Desértico",
+  "regiao": "África",
+  "ml_dia": 90,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Primula vulgaris",
+  "nome_popular": "Prímula",
+  "clima": "Temperado",
+  "regiao": "Europa",
+  "ml_dia": 180,
+  "melhor_solo": "Solo Úmido",
+  "dificuldade_cultivar": "Moderada"
+},
+{
+  "nome_cientifico": "Tradescantia spathacea",
+  "nome_popular": "Lírio-roxo",
+  "clima": "Tropical",
+  "regiao": "Américas",
+  "ml_dia": 150,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Dracaena marginata",
+  "nome_popular": "Dracena",
+  "clima": "Tropical",
+  "regiao": "África",
+  "ml_dia": 220,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Heuchera",
+  "nome_popular": "Coral Bells",
+  "clima": "Temperado",
+  "regiao": "Américas",
+  "ml_dia": 200,
+  "melhor_solo": "Solo Úmido e Rico",
+  "dificuldade_cultivar": "Moderada"
+},
+{
+  "nome_cientifico": "Spathiphyllum",
+  "nome_popular": "Lírio-da-paz",
+  "clima": "Tropical",
+  "regiao": "Américas",
+  "ml_dia": 300,
+  "melhor_solo": "Solo Úmido",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Calathea",
+  "nome_popular": "Calathea",
+  "clima": "Tropical",
+  "regiao": "Américas",
+  "ml_dia": 250,
+  "melhor_solo": "Solo Úmido",
+  "dificuldade_cultivar": "Moderada"
+},
+{
+  "nome_cientifico": "Sempervivum",
+  "nome_popular": "Sempervivum",
+  "clima": "Desértico",
+  "regiao": "Europa",
+  "ml_dia": 120,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Monstera deliciosa",
+  "nome_popular": "Costela-de-Adão",
+  "clima": "Tropical",
+  "regiao": "Américas",
+  "ml_dia": 280,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Cereus peruvianus",
+  "nome_popular": "Cacto Coluna",
+  "clima": "Desértico",
+  "regiao": "Américas",
+  "ml_dia": 50,
+  "melhor_solo": "Solo Arenoso",
+  "dificuldade_cultivar": "Muito Fácil"
+},
+{
+  "nome_cientifico": "Gerbera jamesonii",
+  "nome_popular": "Gerbera",
+  "clima": "Temperado",
+  "regiao": "África",
+  "ml_dia": 200,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Hibiscus rosa-sinensis",
+  "nome_popular": "Hibisco",
+  "clima": "Tropical",
+  "regiao": "Ásia",
+  "ml_dia": 300,
+  "melhor_solo": "Solo Úmido e Rico",
+  "dificuldade_cultivar": "Moderada"
+},
+{
+  "nome_cientifico": "Agave americana",
+  "nome_popular": "Agave",
+  "clima": "Desértico",
+  "regiao": "Américas",
+  "ml_dia": 80,
+  "melhor_solo": "Solo Arenoso",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Begonia",
+  "nome_popular": "Begônia",
+  "clima": "Tropical",
+  "regiao": "Ásia",
+  "ml_dia": 180,
+  "melhor_solo": "Solo Úmido",
+  "dificuldade_cultivar": "Moderada"
+},
+{
+  "nome_cientifico": "Bougainvillea",
+  "nome_popular": "Primavera",
+  "clima": "Tropical",
+  "regiao": "Américas",
+  "ml_dia": 250,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Moderada"
+},
+{
+  "nome_cientifico": "Chamaedorea elegans",
+  "nome_popular": "Palmeira-leque",
+  "clima": "Tropical",
+  "regiao": "Américas",
+  "ml_dia": 150,
+  "melhor_solo": "Solo Úmido",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Crassula ovata",
+  "nome_popular": "Jade",
+  "clima": "Desértico",
+  "regiao": "África",
+  "ml_dia": 90,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Dionaea muscipula",
+  "nome_popular": "Planta Carnívora",
+  "clima": "Temperado",
+  "regiao": "Américas",
+  "ml_dia": 40,
+  "melhor_solo": "Substrato Ácido",
+  "dificuldade_cultivar": "Difícil"
+},
+{
+  "nome_cientifico": "Euphorbia milii",
+  "nome_popular": "Coroa-de-Cristo",
+  "clima": "Tropical",
+  "regiao": "África",
+  "ml_dia": 120,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Fuchsia magellanica",
+  "nome_popular": "Fuchsia",
+  "clima": "Temperado",
+  "regiao": "Américas",
+  "ml_dia": 280,
+  "melhor_solo": "Solo Úmido e Rico",
+  "dificuldade_cultivar": "Moderada"
+},
+{
+  "nome_cientifico": "Ginkgo biloba",
+  "nome_popular": "Ginkgo",
+  "clima": "Temperado",
+  "regiao": "Ásia",
+  "ml_dia": 200,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Moderada"
+},
+{
+  "nome_cientifico": "Haworthia attenuata",
+  "nome_popular": "Haworthia",
+  "clima": "Desértico",
+  "regiao": "África",
+  "ml_dia": 100,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Iris germanica",
+  "nome_popular": "Íris",
+  "clima": "Temperado",
+  "regiao": "Europa",
+  "ml_dia": 220,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Moderada"
+},
+{
+  "nome_cientifico": "Justicia brandegeeana",
+  "nome_popular": "Shrimp Plant",
+  "clima": "Tropical",
+  "regiao": "Américas",
+  "ml_dia": 170,
+  "melhor_solo": "Solo Úmido",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Kalanchoe blossfeldiana",
+  "nome_popular": "Kalanchoe",
+  "clima": "Desértico",
+  "regiao": "África",
+  "ml_dia": 120,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Lupinus polyphyllus",
+  "nome_popular": "Lupino",
+  "clima": "Temperado",
+  "regiao": "Europa",
+  "ml_dia": 180,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Moderada"
+},
+{
+  "nome_cientifico": "Mimosa pudica",
+  "nome_popular": "Mimosa",
+  "clima": "Tropical",
+  "regiao": "Américas",
+  "ml_dia": 130,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Nerium oleander",
+  "nome_popular": "Lírio-da-Montanha",
+  "clima": "Mediterrâneo",
+  "regiao": "Europa",
+  "ml_dia": 250,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Moderada"
+},
+{
+  "nome_cientifico": "Oxalis triangularis",
+  "nome_popular": "Trevo-roxo",
+  "clima": "Temperado",
+  "regiao": "Américas",
+  "ml_dia": 150,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Pachira aquatica",
+  "nome_popular": "Money Tree",
+  "clima": "Tropical",
+  "regiao": "Américas",
+  "ml_dia": 200,
+  "melhor_solo": "Solo Úmido",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Quercus robur",
+  "nome_popular": "Carvalho",
+  "clima": "Temperado",
+  "regiao": "Europa",
+  "ml_dia": 250,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Moderada"
+},
+{
+  "nome_cientifico": "Rhipsalis baccifera",
+  "nome_popular": "Cacto Macarrão",
+  "clima": "Tropical",
+  "regiao": "Américas",
+  "ml_dia": 120,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Sedum spurium",
+  "nome_popular": "Sedum",
+  "clima": "Temperado",
+  "regiao": "Europa",
+  "ml_dia": 150,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Tillandsia",
+  "nome_popular": "Tillandsia",
+  "clima": "Tropical",
+  "regiao": "Américas",
+  "ml_dia": 80,
+  "melhor_solo": "Solo Aerado",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Umbellularia californica",
+  "nome_popular": "Laurel-da-Califórnia",
+  "clima": "Mediterrâneo",
+  "regiao": "Américas",
+  "ml_dia": 180,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Moderada"
+},
+{
+  "nome_cientifico": "Vriesea",
+  "nome_popular": "Vriesea",
+  "clima": "Tropical",
+  "regiao": "Américas",
+  "ml_dia": 250,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Moderada"
+},
+{
+  "nome_cientifico": "Wisteria sinensis",
+  "nome_popular": "Glicínia",
+  "clima": "Temperado",
+  "regiao": "Ásia",
+  "ml_dia": 300,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Moderada"
+},
+{
+  "nome_cientifico": "Xerophyllum tenax",
+  "nome_popular": "Xerofilo",
+  "clima": "Desértico",
+  "regiao": "Américas",
+  "ml_dia": 100,
+  "melhor_solo": "Solo Arenoso",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Yucca filamentosa",
+  "nome_popular": "Yucca",
+  "clima": "Desértico",
+  "regiao": "Américas",
+  "ml_dia": 90,
+  "melhor_solo": "Solo Arenoso",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Zelkova serrata",
+  "nome_popular": "Zelkova",
+  "clima": "Temperado",
+  "regiao": "Ásia",
+  "ml_dia": 220,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Moderada"
+},
+{
+  "nome_cientifico": "Achillea millefolium",
+  "nome_popular": "Aquiléia",
+  "clima": "Temperado",
+  "regiao": "Europa",
+  "ml_dia": 150,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Bromeliaceae",
+  "nome_popular": "Bromélia",
+  "clima": "Tropical",
+  "regiao": "Américas",
+  "ml_dia": 200,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Cordyline fruticosa",
+  "nome_popular": "Dracena-céu",
+  "clima": "Tropical",
+  "regiao": "Oceania",
+  "ml_dia": 180,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Dianthus caryophyllus",
+  "nome_popular": "Cravo",
+  "clima": "Temperado",
+  "regiao": "Europa",
+  "ml_dia": 200,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Eucalyptus globulus",
+  "nome_popular": "Eucalipto",
+  "clima": "Temperado",
+  "regiao": "Oceania",
+  "ml_dia": 250,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Moderada"
+},
+{
+  "nome_cientifico": "Fatsia japonica",
+  "nome_popular": "Fatsia",
+  "clima": "Temperado",
+  "regiao": "Ásia",
+  "ml_dia": 150,
+  "melhor_solo": "Solo Úmido e Rico",
+  "dificuldade_cultivar": "Moderada"
+},
+{
+  "nome_cientifico": "Gaultheria procumbens",
+  "nome_popular": "Teixo-ramoso",
+  "clima": "Temperado",
+  "regiao": "Américas",
+  "ml_dia": 120,
+  "melhor_solo": "Solo Ácido",
+  "dificuldade_cultivar": "Moderada"
+},
+{
+  "nome_cientifico": "Hemerocallis",
+  "nome_popular": "Hemerocallis",
+  "clima": "Temperado",
+  "regiao": "Europa",
+  "ml_dia": 180,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Fácil"
+},
+{
+  "nome_cientifico": "Ilex aquifolium",
+  "nome_popular": "Azevinho",
+  "clima": "Temperado",
+  "regiao": "Europa",
+  "ml_dia": 200,
+  "melhor_solo": "Solo Bem Drenado",
+  "dificuldade_cultivar": "Moderada"
+}]

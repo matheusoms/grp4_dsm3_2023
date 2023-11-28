@@ -877,22 +877,9 @@ a:focus {
 }
 
 .container-consult {
-background-color: #dddddd;
+background-color: #00313D;
 width: 100%;
 margin: auto;
-filter: drop-shadow(rgb(114, 114, 114) 1rem 1rem 10px);
-padding-top: 1em;
-padding-bottom: 15em;
-}
-
-.parameters ul li {
-  display: inline-flex;
-  float: none;
-  position: relative;
-  padding: 30px;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: black;
-  text-decoration: solid;
+padding: 400px;
 }
 /*# sourceMappingURL=style.css.map */

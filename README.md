@@ -13,14 +13,8 @@ A partir dele, desenvolvemos uma plataforma web onde o produtor agrícola conseg
 
 ## Integrantes do Projeto
 
-<b>Matheus Rodrigues</b> <br>
-`Github` [mastruz7](https://github.com/mastruz7)
-
 <b>Matheus Matias</b> <br>
 `Github` [matheusoms](https://github.com/matheusoms)
-
-<b>Nathalia Valim</b> <br>
-`Github` [preencher](https://github.com/)
 
 <b>Pedro Penteado</b> <br>
 `Github` [Dreppo](https://github.com/Dreppo)
@@ -64,7 +58,15 @@ No Linux `source venv/bin/activate`
 `python manage.py runserver`
 - Depois abra o navegador no localhost indicado
 
+## Ativar e usar a API
+- no cmd
+- ativar a Venv
+- entrar na pasta API `cd API/`
+- digite `python app.py` esse codigo cria automaticamente o banco de dados necessario
 
+## Ver a API
+- no navegador digite `http://127.0.0.1:5000`
+- usar /plantas: "Retorna o banco completo", /solo: "Retorna os dados do solo", /nomes: "Retorna o nome_cientifico e nome_popular
 
 
 
