@@ -1,4 +1,5 @@
 from django.http import HttpResponseNotFound
+from django.shortcuts import render
 from django.shortcuts import render, redirect
 from django.forms.models import model_to_dict
 
@@ -9,10 +10,15 @@ from .models import Pessoa
 from .forms import PessoaForm
 from django.shortcuts import redirect
 
+def index(request):
+    return render(request, "index.html")
+
+def about(request):
+    return render(request, "about.html")
 
 def listar_pessoas(request):
     pessoas = obter_pessoas()
-    return render(request, 'listar_pessoas.html', {'pessoas': pessoas})
+    return render(request, 'work.html', {'pessoas': pessoas})
 
 
 def criar(request):
@@ -23,13 +29,10 @@ def criar(request):
             idade = form.cleaned_data['idade']
             cpf = form.cleaned_data['cpf']
             criar_pessoa(nome, idade, cpf)  
-            return redirect('listar_pessoas')
+            return redirect('consultar')
     else:
         form = PessoaForm()  # Use o formulário PessoaForm
-    return render(request, 'criar_pessoa.html', {'form': form})
-
-
-
+    return render(request, 'criar.html', {'form': form})
 
 
 def editar(request, pessoa_cpf):
@@ -56,4 +59,4 @@ def editar(request, pessoa_cpf):
 
 def excluir(request, pessoa_cpf):
     excluir_pessoa(pessoa_cpf)
-    return redirect('listar_pessoas')
+    return redirect('consultar')

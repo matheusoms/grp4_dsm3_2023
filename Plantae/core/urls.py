@@ -1,13 +1,13 @@
 
 # core/urls.py
 from django.urls import path
-from .views import criar, listar_pessoas, editar, excluir
-
+from .import views
 
 urlpatterns = [
-    path('', listar_pessoas, name='home'),  # Adicione esta linha para a URL raiz
-    path('listar/', listar_pessoas, name='listar_pessoas'),
-    path('criar/', criar, name='criar_pessoa'),
-    path('editar/<str:pessoa_cpf>/', editar, name='editar_pessoa'),
-    path('excluir/<str:pessoa_cpf>/', excluir, name='excluir_pessoa'),
+    path('', views.index, name='home'),  # Adicione esta linha para a URL raiz
+    path('consultar/', views.listar_pessoas, name='consultar'),
+    path('sobre/', views.about, name='sobre'),
+    path('criar/', views.criar, name='criar_pessoa'),
+    path('editar/<str:pessoa_cpf>/', views.editar, name='editar_pessoa'),
+    path('excluir/<str:pessoa_cpf>/', views.excluir, name='excluir_pessoa'),
 ]
