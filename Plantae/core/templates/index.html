@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
 
@@ -14,16 +16,16 @@
 
   <title>PLANTAE</title>
 
-  <link rel="icon" type="image/jpg" href="../images/Logotipo 1 png.png" />
-
+  <link rel="icon" type="image/jpg" href="{% static 'images/Logotipo 1 png.png' %}" />
+ 
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
 
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
   <!-- Custom styles for this template -->
-  <link href="../css/style.css" rel="stylesheet" />
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
   <!-- responsive style -->
-  <link href="../css/responsive.css" rel="stylesheet" />
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
 </head>
 
 <body>
@@ -33,7 +35,7 @@
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container">
           <a class="navbar-brand" href="index.html">
-            <img src="../images/Logotipo 1 png.png" alt="" />
+            <img src="{% static 'images/Logotipo 1 png.png' %}" alt="" />
             <span>
               PLANTAE
             </span>
@@ -45,13 +47,16 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  ">
               <li class="nav-item active">
-                <a class="nav-link" href="index.html">Página Inicial <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="{% url 'home' %}">Página Inicial <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html"> Sobre Nós</a>
+                <a class="nav-link" href="{% url 'sobre' %}">Sobre Nós</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="work.html">Consulta </a>
+                <a class="nav-link" href="{% url 'criar_pessoa' %}">Cadastrar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'consultar' %}">Consultar</a>
               </li>
             </ul>
           </div>
@@ -105,7 +110,7 @@
                      Clique no botão abaixo e saiba mais sobre o projeto.
                     </p>
                     <div class="btn-box">
-                      <a href="about.html" class="btn-1">
+                      <a href="{% static 'about.html' %}" class="btn-1">
                         Sobre Nós
                       </a>
                     </div>
@@ -113,7 +118,7 @@
                 </div>
                 <div class="offset-md-1 col-md-4 img-container">
                   <div class="img-box">
-                    <img src="../images/Logotipo 1 png amarelo.png" alt="">
+                    <img src="{% static 'images/Logotipo 1 png amarelo.png' %}" alt="">
                   </div>
                 </div>
               </div>
@@ -134,7 +139,7 @@
                       Clique abaixo.
                     </p>
                     <div class="btn-box">
-                      <a href="work.html" class="btn-1">
+                      <a href="{% static 'work.html' %}" class="btn-1">
                         Consultar
                       </a>
                     </div>
@@ -142,7 +147,7 @@
                 </div>
                 <div class="offset-md-1 col-md-4 img-container">
                   <div class="img-box">
-                    <img src="../images/Logotipo 1 png amarelo.png" alt="">
+                    <img src="{% static 'images/Logotipo 1 png amarelo.png' %}" alt="">
                   </div>
                 </div>
               </div>
@@ -172,7 +177,7 @@
               <div class="tab_container">
                 <div class="t-link-box" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                   <div class="img-box">
-                    <img src="../images/f1.png" alt="">
+                    <img src="{% static 'images/f1.png' %}" alt="">
                   </div>
                   <div class="detail-box">
                     <h5>
@@ -185,7 +190,7 @@
                 </div>
                 <div class="t-link-box collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                   <div class="img-box">
-                    <img src="../images/f2.png" alt="">
+                    <img src="{% static 'images/f2.png' %}" alt="">
                   </div>
                   <div class="detail-box">
                     <h5>
@@ -198,7 +203,7 @@
                 </div>
                 <div class="t-link-box collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                   <div class="img-box">
-                    <img src="../images/f4.png" alt="">
+                    <img src="{% static 'images/f4.png' %}" alt="">
                   </div>
                   <div class="detail-box">
                     <h5>
@@ -215,22 +220,22 @@
           <div class="col-md-6">
             <div class="collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion">
               <div class="img-box">
-                <img src="../images/freelance-img.jpg" alt="">
+                <img src="{% static 'images/freelance-img.jpg' %}" alt="">
               </div>
             </div>
             <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion">
               <div class="img-box">
-                <img src="../images/freelance-img.jpg" alt="">
+                <img src="{% static 'images/freelance-img.jpg' %}" alt="">
               </div>
             </div>
             <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordion">
               <div class="img-box">
-                <img src="../images/freelance-img.jpg" alt="">
+                <img src="{% static 'images/freelance-img.jpg' %}" alt="">
               </div>
             </div>
             <div class="collapse" id="collapseFour" aria-labelledby="headingfour" data-parent="#accordion">
               <div class="img-box">
-                <img src="../images/freelance-img.jpg" alt="">
+                <img src="{% static 'images/freelance-img.jpg' %}" alt="">
               </div>
             </div>
           </div>
@@ -262,7 +267,7 @@
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sem orci, ullamcorper eget placerat elementum, facilisis aliquam orci. Mauris ullamcorper non nisl at imperdiet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sem orci, ullamcorper eget placerat elementum, facilisis aliquam orci. Mauris ullamcorper non nisl at imperdiet.
                   </p>
-                  <img src="../images/quote.png" alt="">
+                  <img src="{% static 'images/quote.png' %}" alt="">
                 </div>
               </div>
               <div class="carousel-item">
@@ -273,7 +278,7 @@
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sem orci, ullamcorper eget placerat elementum, facilisis aliquam orci. Mauris ullamcorper non nisl at imperdiet.
                   </p>
-                  <img src="../images/quote.png" alt="">
+                  <img src="{% static 'images/quote.png' %}" alt="">
                 </div>
               </div>
               <div class="carousel-item">
@@ -284,7 +289,7 @@
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sem orci, ullamcorper eget placerat elementum, facilisis aliquam orci. Mauris ullamcorper non nisl at imperdiet.
                   </p>
-                  <img src="../images/quote.png" alt="">
+                  <img src="{% static 'images/quote.png' %}" alt="">
                 </div>
               </div>
             </div>
@@ -311,7 +316,7 @@
       <div class="container">
         <div class="info_top">
           <div class="info_logo">
-            <img src="../images/Logotipo 1 png.png" alt="" />
+            <img src="{% static 'images/Logotipo 1 png.png' %}" alt="" />
             <span>
               PLANTAE
             </span>
@@ -327,13 +332,13 @@
                 </h5>
                 <ul>
                   <li class=" active">
-                    <a class="" href="index.html">Página Inicial<span class="sr-only">(current)</span></a>
+                    <a class="" href="{% static 'index.html' %}">Página Inicial<span class="sr-only">(current)</span></a>
                   </li>
                   <li class="">
-                    <a class="" href="about.html">Sobre Nós </a>
+                    <a class="" href="{% static 'about.html' %}">Sobre Nós </a>
                   </li>
                   <li class="">
-                    <a class="" href="work.html">Consultar </a>
+                    <a class="" href="{% static 'work.html' %}">Consultar </a>
                   </li>
                 </ul>
               </div>
@@ -362,12 +367,9 @@
 
   <!-- end info section -->
 
-  <script src="../js/jquery-3.4.1.min.js"></script>
-  <script src="../js/bootstrap.js"></script>
-  <script src="../js/custom.js"></script>
+  <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.js' %}"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
 
-
-</body>
-</body>
-
+  </body>
 </html>

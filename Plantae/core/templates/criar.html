@@ -1,0 +1,184 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>PLANTAE</title>
+
+  <link rel="icon" type="image/jpg" href="{% static 'images/Logotipo 1 png.png' %}" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="{% static 'index.html' %}">
+            <img src="{% static 'images/Logotipo 1 png.png' %}" alt="" />
+            <span>
+              PLANTAE
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ">
+              <li class="nav-item active">
+                <a class="nav-link" href="{% url 'home' %}">Página Inicial <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'sobre' %}">Sobre Nós</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'criar_pessoa' %}">Cadastrar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'consultar' %}">Consultar</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <div class="custom_menu-btn ">
+              <button>
+                <span class=" s-1">
+
+                </span>
+                <span class="s-2">
+
+                </span>
+                <span class="s-3">
+
+                </span>
+              </button>
+            </div>
+          </div>
+
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+
+  <!-- consult section -->
+
+  <section class="freelance_section layout_padding">
+    <div id="accordion">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-10 offset-md-1">
+            <div class="detail-box">
+              <div class="heading_container">
+                <h2>
+                  ÁREA DE CONSULTA
+                </h2>
+              </div>
+              <div class="container-consult">
+                <h1>Criar Pessoa</h1>
+                    <form method="post" action="{% url 'criar_pessoa' %}">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <button type="submit">Salvar</button>
+                    </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- end consult section -->
+
+  <!-- info section -->
+
+  <section class="info_section ">
+    <div class="info_container layout_padding-top">
+      <div class="container">
+        <div class="info_top">
+          <div class="info_logo">
+            <img src="{% static 'images/Logotipo 1 png.png' %}" alt="" />
+            <span>
+              PLANTAE
+            </span>
+          </div>
+        </div>
+
+        <div class="info_main">
+          <div class="row">
+            <div class="col-md-3 col-lg-4">
+              <div class="info_link-box">
+                <h5>
+                  Links Úteis
+                </h5>
+                <ul>
+                  <li class=" active">
+                    <a class="" href="{% static 'index.html' %}">Página Inicial<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="">
+                    <a class="" href="{% static 'about.html' %}">Sobre Nós </a>
+                  </li>
+                  <li class="">
+                    <a class="" href="{% static 'work.html' %}">Consultar </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 ">
+              <h5>
+                APIs Utilizadas
+              </h5>
+              <p>
+                Estamos utilizando API's disponibilizadas pela <a href="https://www.agroapi.cnptia.embrapa.br/portal/">Embrapa</a> de forma aberta e freemium.
+              </p>
+            </div>
+
+            <div class="col-md-9 col-lg-4 offset-lg-1">
+              <h5>
+                Base
+              </h5>
+              <p>
+                O projeto consiste em uma plataforma web onde o produtor agrícola consegue consultar quais as melhores plantas a serem cultivadas em determinada região baseada em clima, solo, e condições adversas. Para isso iremos utilizar API's disponibilizadas pela Embrapa de forma aberta e freemium onde as consultas realizadas serão retornadas em forma de tabelas e descrição, a fim de colaborar com a disseminação de informações sobre a diversidade de plantas.              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+
+  <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.js' %}"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
+
+
+
+</body>
+</body>
+
+</html>

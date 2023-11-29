@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
 
@@ -14,16 +16,16 @@
 
   <title>PLANTAE</title>
 
-  <link rel="icon" type="image/jpg" href="../images/Logotipo 1 png.png" />
+  <link rel="icon" type="image/jpg" href="{% static 'images/Logotipo 1 png.png' %}" />
 
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
 
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
   <!-- Custom styles for this template -->
-  <link href="../css/style.css" rel="stylesheet" />
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
   <!-- responsive style -->
-  <link href="../css/responsive.css" rel="stylesheet" />
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
 </head>
 
 <body class="sub_page">
@@ -32,8 +34,8 @@
     <header class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container">
-          <a class="navbar-brand" href="index.html">
-            <img src="../images/Logotipo 1 png.png" alt="" />
+          <a class="navbar-brand" href="{% static 'index.html' %}">
+            <img src="{% static 'images/Logotipo 1 png.png' %}" alt="" />
             <span>
               PLANTAE
             </span>
@@ -44,16 +46,19 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  ">
-              <li class="nav-item ">
-                <a class="nav-link" href="index.html">Página Inicial <span class="sr-only">(current)</span></a>
+              <li class="nav-item active">
+                <a class="nav-link" href="{% url 'home' %}">Página Inicial <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">Sobre Nós</a>
+                <a class="nav-link" href="{% url 'sobre' %}">Sobre Nós</a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="work.html">Consultar</a>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'criar_pessoa' %}">Cadastrar</a>
               </li>
-            </ul> 
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'consultar' %}">Consultar</a>
+              </li>
+            </ul>
           </div>
           <div>
             <div class="custom_menu-btn ">
@@ -92,8 +97,23 @@
                 </h2>
               </div>
               <div class="container-consult">
-                
-              </div>
+                <h1>Listar Pessoas</h1>
+                  <ul>
+                      {% for pessoa in pessoas %}
+                      <li>
+                          {{ pessoa.nome }} - {{ pessoa.idade }} anos - CPF: {{ pessoa.cpf }}
+                          {% if pessoa.cpf %}
+                              <a href="{% url 'editar_pessoa' pessoa_cpf=pessoa.cpf %}">Editar</a>
+                              <a href="{% url 'excluir_pessoa' pessoa_cpf=pessoa.cpf %}">Excluir</a>  <!-- Adiciona esta linha -->
+                          {% else %}
+                              <span style="color: red;">CPF indisponível</span>
+                          {% endif %}
+                      </li>
+                  {% endfor %}
+                  </ul>
+                  <!-- Adicione o link para a página de criação de pessoas -->
+                  <a href="{% url 'criar_pessoa' %}">Criar Pessoa</a>
+                </div>
               </div>
             </div>
           </div>
@@ -110,7 +130,7 @@
       <div class="container">
         <div class="info_top">
           <div class="info_logo">
-            <img src="../images/Logotipo 1 png.png" alt="" />
+            <img src="{% static 'images/Logotipo 1 png.png' %}" alt="" />
             <span>
               PLANTAE
             </span>
@@ -126,13 +146,13 @@
                 </h5>
                 <ul>
                   <li class=" active">
-                    <a class="" href="index.html">Página Inicial<span class="sr-only">(current)</span></a>
+                    <a class="" href="{% static 'index.html' %}">Página Inicial<span class="sr-only">(current)</span></a>
                   </li>
                   <li class="">
-                    <a class="" href="about.html">Sobre Nós </a>
+                    <a class="" href="{% static 'about.html' %}">Sobre Nós </a>
                   </li>
                   <li class="">
-                    <a class="" href="work.html">Consultar </a>
+                    <a class="" href="{% static 'work.html' %}">Consultar </a>
                   </li>
                 </ul>
               </div>
@@ -162,9 +182,9 @@
   <!-- end info section -->
 
 
-  <script src="../js/jquery-3.4.1.min.js"></script>
-  <script src="../js/bootstrap.js"></script>
-  <script src="../js/custom.js"></script>
+  <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.js' %}"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
 
 
 
