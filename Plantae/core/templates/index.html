@@ -53,7 +53,7 @@
                 <a class="nav-link" href="{% url 'sobre' %}">Sobre Nós</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'criar_pessoa' %}">Cadastrar</a>
+                <a class="nav-link" href="{% url 'criar_plantas' %}">Cadastrar</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'consultar' %}">Consultar</a>
@@ -110,7 +110,7 @@
                      Clique no botão abaixo e saiba mais sobre o projeto.
                     </p>
                     <div class="btn-box">
-                      <a href="{% static 'about.html' %}" class="btn-1">
+                      <a href="{% url 'sobre' %}" class="btn-1">
                         Sobre Nós
                       </a>
                     </div>
@@ -139,7 +139,7 @@
                       Clique abaixo.
                     </p>
                     <div class="btn-box">
-                      <a href="{% static 'work.html' %}" class="btn-1">
+                      <a href="{% url 'consultar' %}" class="btn-1">
                         Consultar
                       </a>
                     </div>
@@ -332,13 +332,13 @@
                 </h5>
                 <ul>
                   <li class=" active">
-                    <a class="" href="{% static 'index.html' %}">Página Inicial<span class="sr-only">(current)</span></a>
+                    <a class="" href="{% url 'home' %}">Página Inicial<span class="sr-only">(current)</span></a>
                   </li>
                   <li class="">
-                    <a class="" href="{% static 'about.html' %}">Sobre Nós </a>
+                    <a class="" href="{% url 'sobre' %}">Sobre Nós </a>
                   </li>
                   <li class="">
-                    <a class="" href="{% static 'work.html' %}">Consultar </a>
+                    <a class="" href="{% url 'consultar' %}">Consultar </a>
                   </li>
                 </ul>
               </div>

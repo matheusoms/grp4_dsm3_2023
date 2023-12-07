@@ -2,12 +2,11 @@ from django.http import HttpResponseNotFound
 from django.shortcuts import render
 from django.shortcuts import render, redirect
 from django.forms.models import model_to_dict
-
 from .mongodb_utils import get_mongo_connection
 
-from .services import criar_pessoa, obter_pessoas, obter_pessoa_por_cpf, atualizar_pessoa, excluir_pessoa
-from .models import Pessoa
-from .forms import PessoaForm
+from .services import criar_planta, excluir_planta,atualizar_planta,obter_planta_por_nome_cientifico,obter_planta
+from .models import Plantas
+from .forms import PlantasForm
 from django.shortcuts import redirect
 
 def index(request):
@@ -16,47 +15,55 @@ def index(request):
 def about(request):
     return render(request, "about.html")
 
-def listar_pessoas(request):
-    pessoas = obter_pessoas()
-    return render(request, 'work.html', {'pessoas': pessoas})
+def listar_plantas(request):
+    plantas = obter_planta()
+    return render(request, 'work.html', {'plantas': plantas})
 
 
 def criar(request):
     if request.method == 'POST':
-        form = PessoaForm(request.POST)  # Use o formulário PessoaForm
+        form = PlantasForm(request.POST)
         if form.is_valid():
-            nome = form.cleaned_data['nome']
-            idade = form.cleaned_data['idade']
-            cpf = form.cleaned_data['cpf']
-            criar_pessoa(nome, idade, cpf)  
+            nome_cientifico = form.cleaned_data['nome_cientifico']
+            nome_popular = form.cleaned_data['nome_popular']
+            melhor_solo = form.cleaned_data['melhor_solo']
+            clima = form.cleaned_data['clima']
+            regiao = form.cleaned_data['regiao']
+            dificuldade_cultivar = form.cleaned_data['dificuldade_cultivar']
+            ml_dia = form.cleaned_data['ml_dia']
+            criar_planta(nome_cientifico,nome_popular,melhor_solo,clima,regiao,dificuldade_cultivar,ml_dia)  
             return redirect('consultar')
     else:
-        form = PessoaForm()  # Use o formulário PessoaForm
+        form = PlantasForm()  
     return render(request, 'criar.html', {'form': form})
 
 
-def editar(request, pessoa_cpf):
-    pessoa = obter_pessoa_por_cpf(pessoa_cpf)
+from django.shortcuts import render, redirect
 
-    if pessoa:  # Verifique se a pessoa foi encontrada
-        if request.method == 'POST':
-            form = PessoaForm(request.POST, instance=Pessoa(**pessoa))
-            if form.is_valid():
-                # Adicione logs aqui
-                print(f"DEBUG: Atualizando pessoa com CPF {pessoa_cpf}. Nova CPF: {form.cleaned_data['cpf']}")
-                print(f"DEBUG: Documento antes da atualização: {pessoa}")
-                # Atualize a pessoa no MongoDB
-                atualizar_pessoa(pessoa['cpf'], form.cleaned_data['nome'], form.cleaned_data['idade'], form.cleaned_data['cpf'])
-                print(f"DEBUG: Documento após da atualização: {obter_pessoa_por_cpf(form.cleaned_data['cpf'])}")
-                return redirect('listar_pessoas')
+def editar(request, nome_planta):
+    resultado = obter_planta_por_nome_cientifico(nome_planta)
+    
+    if resultado:
+        form = PlantasForm(request.POST, instance=Plantas(**resultado))
+
+        if form.is_valid():
+            atualizar_planta(
+                nome_planta,
+                form.cleaned_data['nome_cientifico'],
+                form.cleaned_data['nome_popular'],
+                form.cleaned_data['melhor_solo'],
+                form.cleaned_data['clima'],
+                form.cleaned_data['regiao'],
+                form.cleaned_data['dificuldade_cultivar'],
+                form.cleaned_data['ml_dia']
+            )
+            return redirect('consultar')
         else:
-            form = PessoaForm(instance=Pessoa(**pessoa))
-
-        return render(request, 'editar_pessoa.html', {'form': form, 'pessoa_cpf': pessoa_cpf})
+            return render(request, 'editar.html', {'form': form, 'nome_cientifico': nome_planta})
     else:
-        # Lógica para lidar com pessoa não encontrada (por exemplo, exibir uma mensagem de erro)
-        return HttpResponseNotFound("Pessoa não encontrada")
+        return HttpResponseNotFound("Planta não encontrada")
 
-def excluir(request, pessoa_cpf):
-    excluir_pessoa(pessoa_cpf)
-    return redirect('consultar')
+    
+def excluir(request, nome_planta):
+     excluir_planta(nome_planta)
+     return redirect('consultar')

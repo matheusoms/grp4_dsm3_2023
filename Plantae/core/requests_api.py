@@ -1,5 +1,5 @@
 from pymongo import MongoClient
-from mongodb_utils import colecao, db
+from .mongodb_utils import colecao, db
 import requests
 
 # Configurações do MongoDB

@@ -55,7 +55,7 @@
                 <a class="nav-link" href="{% url 'sobre' %}">Sobre Nós</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'criar_pessoa' %}">Cadastrar</a>
+                <a class="nav-link" href="{% url 'criar_plantas' %}">Cadastrar</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'consultar' %}">Consultar</a>
@@ -106,10 +106,10 @@
               O projeto consiste em uma plataforma web onde o produtor agrícola consegue consultar quais as melhores plantas a serem cultivadas em determinada região baseada em clima, solo, e condições adversas. Para isso iremos utilizar API's disponibilizadas pela Embrapa de forma aberta e freemium onde as consultas realizadas serão retornadas em forma de tabelas e descrição, a fim de colaborar com a disseminação de informações sobre a diversidade de plantas.
             </p>
             <div class="btn-box">
-              <a href="index.html" class="btn-1">
+              <a href="{% url 'home' %}" class="btn-1">
                 Página Inicial
               </a>
-              <a href="work.html" class="btn-2">
+              <a href="{% url 'consultar' %}" class="btn-2">
                 Consultar
               </a>
             </div>
@@ -141,7 +141,7 @@
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sem orci, ullamcorper eget placerat elementum, facilisis aliquam orci. Mauris ullamcorper non nisl at imperdiet. Mauris faucibus ultricies eros, id efficitur tortor faucibus nec. Integer imperdiet ipsum a tempor ultricies. Phasellus et tempus ex, et posuere tellus. Cras facilisis iaculis leo quis interdum. Mauris pulvinar gravida efficitur. Proin maximus, ligula ut ullamcorper vestibulum, nisi sem ullamcorper mauris, et elementum mi nisl eu risus.
         </p>
-        <a href="work.html">
+        <a href="{% url 'consultar' %}">
           Consultar
         </a>
       </div>
@@ -173,13 +173,13 @@
                 </h5>
                 <ul>
                   <li class=" active">
-                    <a class="" href="index.html">Página Inicial<span class="sr-only">(current)</span></a>
+                    <a class="" href="{% url 'home' %}">Página Inicial<span class="sr-only">(current)</span></a>
                   </li>
                   <li class="">
-                    <a class="" href="about.html">Sobre Nós </a>
+                    <a class="" href="{% url 'sobre' %}">Sobre Nós </a>
                   </li>
                   <li class="">
-                    <a class="" href="work.html">Consultar </a>
+                    <a class="" href="{% url 'consultar' %}">Consultar </a>
                   </li>
                 </ul>
               </div>

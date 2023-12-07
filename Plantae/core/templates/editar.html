@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Pessoa</title>
+    <link rel="icon" type="image/jpg" href="{% static 'images/Logotipo 1 png.png' %}" />
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+  
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+</head>
+<body class="sub_page">
+    <section class="freelance_section layout_padding">
+        <div id="accordion">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-10 offset-md-1">
+                <div class="detail-box">
+                  <div class="heading_container">
+                    <h2>
+                      ÁREA DE CADASTRO
+                    </h2>
+                  </div>
+                  <div class="container-consult">
+                    <h1>Editar Planta</h1>
+                        <form method="post" action="{% url 'editar_planta' nome_planta=nome_cientifico %}">
+                            {% csrf_token %}
+                            {{ form.as_p }}
+                            <button type="submit">Salvar</button>
+                        </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.js' %}"></script>
+        <script src="{% static 'js/custom.js' %}"></script>
+      
+</body>
+</html>

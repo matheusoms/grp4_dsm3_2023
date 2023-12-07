@@ -1,60 +1,52 @@
 # No arquivo core/services.py
-from .forms import PessoaForm
+from .forms import PlantasForm
 from .mongodb_utils import get_mongo_connection
 
-def criar_pessoa(nome, idade, cpf):
+def criar_planta(nome_cientifico,nome_popular,melhor_solo,clima,regiao,dificuldade_cultivar,ml_dia):
     client = get_mongo_connection()
     db = client['PROJETO']
     colecao = db['semente']
 
-    pessoa = {"nome": nome, "idade": idade, "cpf": cpf}
-    result = colecao.insert_one(pessoa)
+    plantas = {"nome_cientifico": nome_cientifico, "nome_popular": nome_popular, "melhor_solo": melhor_solo, "clima": clima, "regiao": regiao, "dificuldade_cultivar": dificuldade_cultivar, "ml_dia": ml_dia}
+    result = colecao.insert_one(plantas)
 
     client.close()
     return result.inserted_id
 
-def obter_pessoas():
+def obter_planta():
+    client = get_mongo_connection()
+    db = client['PROJETO']
+    colecao = db['semente']
+    plantas = list(colecao.find({}, {'_id': 0}))
+
+    client.close()
+    return plantas
+
+def obter_planta_por_nome_cientifico(busca):
     client = get_mongo_connection()
     db = client['PROJETO']
     colecao = db['semente']
 
-    # Use projection para excluir o campo _id do resultado
-    pessoas = list(colecao.find({}, {'_id': 0}))
-
-    client.close()
-    return pessoas
-
-def obter_pessoa_por_cpf(pessoa_cpf):
-    client = get_mongo_connection()
-    db = client['PROJETO']
-    colecao = db['semente']
-
-    pessoa_data = colecao.find_one({"cpf": pessoa_cpf})
+    plantas_data = colecao.find_one({"nome_cientifico": busca})
 
     client.close()
 
-    if pessoa_data:
-        pessoa_data.pop('_id', None)
-        print(f"DEBUG: Documento encontrado antes da atualização: {pessoa_data}")
-        return pessoa_data
+    if plantas_data:
+        plantas_data.pop('_id', None)
+        print(f"DEBUG: Documento encontrado antes da atualização: {plantas_data}")
+        return plantas_data
     else:
         return None
 
-def atualizar_pessoa(cpf, nome, idade, novo_cpf):
+def atualizar_planta(nome_cientifico,novonome1,novonome2,novosolo,novoclima,novaregiao,novadiff,novoml):
     client = get_mongo_connection()
     db = client['PROJETO']
     colecao = db['semente']
 
-    filtro = {"cpf": cpf}
-    atualizacao = {"$set": {"nome": nome, "idade": idade, "cpf": novo_cpf}}
+    filtro = {"nome_cientifico": nome_cientifico}
+    atualizacao = {"$set": {"nome_cientifico": novonome1, "nome_popular": novonome2, "melhor_solo": novosolo, "clima": novoclima, "regiao": novaregiao, "dificuldade_cultivar": novadiff, "ml_dia": novoml}}
     
-    # Adicione logs temporários para depuração
-    print(f"DEBUG: Atualizando pessoa com CPF {cpf}. Nova CPF: {novo_cpf}")
-
     result = colecao.update_one(filtro, atualizacao)
-
-    # Adicione logs temporários para depuração
-    print(f"DEBUG: Documentos modificados: {result.modified_count}")
 
     client.close()
     return result.modified_count
@@ -62,12 +54,12 @@ def atualizar_pessoa(cpf, nome, idade, novo_cpf):
 
 # No arquivo core/services.py
 
-def excluir_pessoa(cpf):
+def excluir_planta(nome_planta):
     client = get_mongo_connection()
     db = client['PROJETO']
     colecao = db['semente']
 
-    filtro = {"cpf": cpf}
+    filtro = {"nome_cientifico": nome_planta}
     result = colecao.delete_one(filtro)
 
     client.close()
