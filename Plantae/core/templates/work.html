@@ -53,7 +53,7 @@
                 <a class="nav-link" href="{% url 'sobre' %}">Sobre Nós</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'criar_pessoa' %}">Cadastrar</a>
+                <a class="nav-link" href="{% url 'criar_plantas' %}">Cadastrar</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'consultar' %}">Consultar</a>
@@ -97,22 +97,23 @@
                 </h2>
               </div>
               <div class="container-consult">
-                <h1>Listar Pessoas</h1>
+                <h1>Listar Plantas</h1>
                   <ul>
-                      {% for pessoa in pessoas %}
+                      {% for planta in plantas %}
                       <li>
-                          {{ pessoa.nome }} - {{ pessoa.idade }} anos - CPF: {{ pessoa.cpf }}
-                          {% if pessoa.cpf %}
-                              <a href="{% url 'editar_pessoa' pessoa_cpf=pessoa.cpf %}">Editar</a>
-                              <a href="{% url 'excluir_pessoa' pessoa_cpf=pessoa.cpf %}">Excluir</a>  <!-- Adiciona esta linha -->
+                          Nome Cientifico: {{ planta.nome_cientifico }} - Nome Popular: {{ planta.nome_popular }} - Melhor solo: {{ planta.melhor_solo }} - Região encontrada: {{ planta.regiao }} - Dificuldade: {{ planta.dificuldade_cultivar }} - Água/Dia: {{ planta.ml_dia }}ml
+                          <br>
+                          {% if planta.nome_cientifico %}
+                              <a href="{% url 'editar_planta' nome_planta=planta.nome_cientifico %}">Editar</a>
+                              <a href="{% url 'excluir_planta' nome_planta=planta.nome_cientifico %}">Excluir</a>
                           {% else %}
-                              <span style="color: red;">CPF indisponível</span>
+                              <span style="color: red;">Dados indisponiveis</span>
                           {% endif %}
                       </li>
+                      <br>
                   {% endfor %}
                   </ul>
-                  <!-- Adicione o link para a página de criação de pessoas -->
-                  <a href="{% url 'criar_pessoa' %}">Criar Pessoa</a>
+                  <a href="{% url 'criar_plantas' %}">Registrar Plantas</a>
                 </div>
               </div>
             </div>

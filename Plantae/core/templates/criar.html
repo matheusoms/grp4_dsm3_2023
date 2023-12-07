@@ -53,7 +53,7 @@
                 <a class="nav-link" href="{% url 'sobre' %}">Sobre Nós</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'criar_pessoa' %}">Cadastrar</a>
+                <a class="nav-link" href="{% url 'criar_plantas' %}">Cadastrar</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'consultar' %}">Consultar</a>
@@ -97,8 +97,8 @@
                 </h2>
               </div>
               <div class="container-consult">
-                <h1>Criar Pessoa</h1>
-                    <form method="post" action="{% url 'criar_pessoa' %}">
+                <h1>Criar Planta</h1>
+                    <form method="post" action="{% url 'criar_plantas' %}">
                         {% csrf_token %}
                         {{ form.as_p }}
                         <button type="submit">Salvar</button>
