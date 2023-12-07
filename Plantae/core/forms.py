@@ -7,15 +7,15 @@ def contar_palavras(frase):
     return len(palavras)
 
 def validacao_nome_popular(value):
-    if len(value) > 10:
+    if len(value) > 15:
         raise ValidationError('O Nome Popular deve ter menos de 10 letras')
     
 def validacao_clima(value):
-    if len(value) > 10:
+    if len(value) > 15:
         raise ValidationError('O Clima deve ter menos de 10 letras')
     
 def validacao_solo(value):
-    if len(value) > 10:
+    if len(value) > 20:
         raise ValidationError('O Solo deve ter menos de 10 letras')
     
 def validacao_regiao(value):
