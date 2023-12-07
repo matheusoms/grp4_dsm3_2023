@@ -1,9 +1,6 @@
 from django.http import HttpResponseNotFound
 from django.shortcuts import render
 from django.shortcuts import render, redirect
-from django.forms.models import model_to_dict
-from .mongodb_utils import get_mongo_connection
-
 from .services import criar_planta, excluir_planta,atualizar_planta,obter_planta_por_nome_cientifico,obter_planta
 from .models import Plantas
 from .forms import PlantasForm
