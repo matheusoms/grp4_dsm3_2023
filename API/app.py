@@ -41,8 +41,8 @@ def index():
     "message": "Bem vindo a API", 
     "/plantas": "Retorna o banco completo",
     "/solo": "Retorna os dados do solo",
-    "/nomes": "Retorna o nome_cientifico e nome_popular"
-    "/dificuldades": "Retorna o todas as dificuldades que as plantas tem"
+    "/nomes": "Retorna o nome_cientifico e nome_popular",
+    "/dificuldades": "Retorna o todas as dificuldades que as plantas tem",
     "/dificuldades/<Dificuldade>": "Retorna o todas as plantas que tem a dificuldade <Dificuldade>"
     })
 
